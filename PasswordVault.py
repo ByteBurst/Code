@@ -248,6 +248,7 @@ def retrieve_entry():
             entry_description.insert(0, description)
         except Exception as e:
             error_label.config(text="Decryption failed: " + str(e), fg="red")
+            
     else:
         error_label.config(text="No matching entry found in the database.", fg="red")
 
